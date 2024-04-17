@@ -8,23 +8,26 @@ int startlab1()
     return 0;
 }
 
-int l1q5()
+int l1q9()
 {
-    string word;
-    cout << "Enter a word: ";
-    cin >> word;
-    int len = word.length();
-    for (int i = len - 1; i >= 0; i--)
+    int year;
+    cout << "Enter year to check for leap: ";
+    cin >> year;
+    if (year % 4 == 0)
     {
-
-        cout << word[i];
+        cout << year << " is a leap year";
     }
+    else
+    {
+        cout << year << " is not a leap year";
+    }
+
     return 0;
 }
 
 int main()
 {
     startlab1();
-    l1q5();
+    l1q9();
     return 0;
 }

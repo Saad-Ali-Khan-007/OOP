@@ -8,23 +8,22 @@ int startlab1()
     return 0;
 }
 
-int l1q5()
+int l1q7()
 {
-    string word;
-    cout << "Enter a word: ";
-    cin >> word;
-    int len = word.length();
-    for (int i = len - 1; i >= 0; i--)
+    int fact = 1, num;
+    cout << "Enter a number to calculate its factorial: ";
+    cin >> num;
+    for (int i = 1; i <= num; i++)
     {
-
-        cout << word[i];
+        fact *= i;
     }
+    cout << "Factorial of " << num << ": " << fact;
     return 0;
 }
 
 int main()
 {
     startlab1();
-    l1q5();
+    l1q7();
     return 0;
 }
